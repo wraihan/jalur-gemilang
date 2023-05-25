@@ -15,10 +15,10 @@
       for i=-8 downto -13: draw p shifted (3.5,i) xscaled 2; endfor;
     ) scaled 1cm; draw Jalur withpen pencircle scaled .25pt;
 
-    path Bulan; Bulan := fullcircle scaled 6cm;
-    draw Bulan shifted (-1.25cm,0);
-    draw Bulan xyscaled (.917,.867) shifted (-.499cm,0); fill fullsquare xyscaled
-      (1.8cm,4.9cm) shifted (1.43cm,0) withcolor white; %to hide the overlapping lines
+    draw fullcircle scaled 6cm shifted (-1.25cm,0); % Bulan %
+    draw fullcircle xyscaled (5.5cm,5.2cm) shifted (-.5cm,0);
+    fill fullsquare xyscaled (1.8cm,4.9cm) %to hide the overlapping lines
+      shifted (1.43cm,0) withcolor white;
 
     Ra=1cm; Rb=2.5cm; d=360; n=28; % Bintang %
     for i=0 step 2 until 26:

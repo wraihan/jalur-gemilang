@@ -20,9 +20,9 @@
     fill p shifted (3.5,-i-1) xscaled 2 withcolor white; endfor; )
     scaled 1cm; draw Jalur;
 
-    path Bulan; Bulan := fullcircle scaled 6cm;
-    fill Bulan shifted (-1.25cm,0) withcolor \MPcolor{kuning};
-    fill Bulan xyscaled (.917,.867) shifted (-.499cm,0) withcolor \MPcolor{biru};
+    fill fullcircle scaled 6cm shifted (-1.25cm,0) withcolor \MPcolor{kuning};
+    fill fullcircle xyscaled (5.5cm,5.2cm) % Bulan %
+      shifted (-.5cm,0) withcolor \MPcolor{biru};
 
     Ra=1cm; Rb=2.5cm; d=360; n=28; path q; q:=fullcircle scaled 2cm; % Bintang %
     for i=0 step 2 until 26: fill ((Ra*cosd(d*i/n),Ra*sind(d*i/n)) --
