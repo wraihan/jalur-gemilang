@@ -27,7 +27,7 @@
     Ra=1cm; Rb=2.5cm; d=360; n=28; path q; q:=fullcircle scaled 2cm; % Bintang %
     for i=0 step 2 until 26: fill ((Ra*cosd(d*i/n),Ra*sind(d*i/n)) --
       (Rb*cosd(d*(i+1)/n),Rb*sind(d*(i+1)/n))--(Ra*cosd(d*(i+2)/n),Ra*sind(d*(i+2)/n))
-      --origin--cycle) shifted (1.75cm,0) withcolor \MPcolor{kuning};
+      -- origin -- cycle) shifted (1.75cm,0) withcolor \MPcolor{kuning};
     endfor; fill q shifted (1.75cm,0) withcolor \MPcolor{kuning}; %to hide image noise
   ) scaled .75; setbounds currentpicture to boundingbox currentpicture enlarged 3mm;
   addbackground withcolor "lightgray";
