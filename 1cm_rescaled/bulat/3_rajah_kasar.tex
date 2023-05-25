@@ -1,0 +1,47 @@
+\setuppapersize[A4,landscape]
+\setuplayout[margin=.75in,location=middle,
+  height=fit,width=fit]
+\setuppagenumbering[location={},style=bold]
+
+\starttext
+
+\startbuffer[rajah]
+\startMPcode
+  draw image (
+    picture Jalur; Jalur := image (
+      draw fullsquare xysized (14,8);
+      path p; p := fullsquare xscaled 14 shifted (0,3.5);
+      for i= 0 downto - 7: draw p shifted (14 ,i); endfor;
+      for i=-8 downto -13: draw p shifted (3.5,i) xscaled 2; endfor;
+    ) scaled 1cm; draw Jalur withpen pencircle scaled .25pt;
+
+    path Bulan; Bulan := fullcircle scaled 6cm;
+    draw Bulan shifted (-1.25cm,0);
+    draw Bulan scaled .889 shifted (-.583cm,0); fill fullsquare xyscaled
+      (1.7cm,5cm) shifted (1.34cm,0) withcolor white; %to hide the overlapping lines
+
+    Ra=1cm; Rb=2.5cm; d=360; n=28; % Bintang %
+    for i=0 step 2 until 26:
+      draw ((Ra*cosd(d*i/n),Ra*sind(d*i/n)) --
+	(Rb*cosd(d*(i+1)/n),Rb*sind(d*(i+1)/n)) --
+	(Ra*cosd(d*(i+2)/n),Ra*sind(d*(i+2)/n))) shifted (1.75cm,0);
+    endfor;
+  ) scaled .75;
+\stopMPcode
+\stopbuffer
+
+\getbuffer[rajah]
+
+\page
+\setuppapersize[A4,portrait]
+\setuplayout[margin=.75in,location=middle,
+  topspace=0in,backspace=.85in,
+  height=fit,width=fit]
+\setuptyping[margin=standard,blank=halfline,option=lua,lines=normal]
+\setupbodyfont[schola,11pt]
+\midaligned{Kod lakaran (bulatan pada bahagian dalam anak bulan):}
+\blank[-1*small]
+\midaligned{\color[red]{*}\tfx \color[blue]{Imej di atas yang terhasil daripada kod di bawah ini telah dikecilkan skalanya kepada 0.5cm per unit.}}
+\tfx \typebuffer[rajah]
+
+\stoptext

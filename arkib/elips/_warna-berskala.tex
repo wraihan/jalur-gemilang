@@ -1,0 +1,17 @@
+\setuppapersize[A4,landscape]
+\setuplayout[topspace=-.75in,
+  margin=.75in,location=middle,
+  height=fit,width=fit]
+\setuppagenumbering[location={},style=bold]
+
+\starttext
+
+\startuseMPgraphic{warnaskala}
+  draw externalfigure "artefacts/_bendera-elips.pdf"
+    shifted (.006cm,-1.615cm);
+  draw externalfigure "artefacts/_skala-unjuran.pdf";
+\stopuseMPgraphic
+
+\hskip-2.5cm \useMPgraphic{warnaskala}
+
+\stoptext

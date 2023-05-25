@@ -1,0 +1,51 @@
+\setuppapersize[A4,landscape]
+\setuplayout[margin=.75in,location=middle,
+  height=fit,width=fit]
+\setuppagenumbering[location={},style=bold]
+
+\starttext
+
+\startbuffer[warna]
+\definecolor[biru]  [c=1,m=1.0,y=0,k=0]
+\definecolor[merah] [c=0,m=.95,y=1,k=0]
+\definecolor[kuning][c=0,m=.09,y=1,k=0]
+
+\startMPcode
+  draw image ( picture Jalur; Jalur := image (
+    fill fullsquare xysized (14,8) withcolor \MPcolor{biru};
+    path p; p:=fullsquare xscaled 14 shifted (0,3.5); forsuffixes i=0,2,4,6:
+    fill p shifted (14,-i  ) withcolor \MPcolor{merah};
+    fill p shifted (14,-i-1) withcolor white; endfor; forsuffixes i=8,10,12:
+    fill p shifted (3.5,-i  ) xscaled 2 withcolor \MPcolor{merah};
+    fill p shifted (3.5,-i-1) xscaled 2 withcolor white; endfor; )
+    scaled 1cm; draw Jalur;
+
+    path Bulan; Bulan := fullcircle scaled 6cm;
+    fill Bulan shifted (-1.25cm,0) withcolor \MPcolor{kuning};
+    fill Bulan xyscaled (.917,.867) shifted (-.499cm,0) withcolor \MPcolor{biru};
+
+    Ra=1cm; Rb=2.5cm; d=360; n=28; path q; q:=fullcircle scaled 2cm; % Bintang %
+    for i=0 step 2 until 26: fill ((Ra*cosd(d*i/n),Ra*sind(d*i/n)) --
+      (Rb*cosd(d*(i+1)/n),Rb*sind(d*(i+1)/n))--(Ra*cosd(d*(i+2)/n),Ra*sind(d*(i+2)/n))
+      --origin--cycle) shifted (1.75cm,0) withcolor \MPcolor{kuning};
+    endfor; fill q shifted (1.75cm,0) withcolor \MPcolor{kuning}; %to hide image noise
+  ) scaled .75; setbounds currentpicture to boundingbox currentpicture enlarged 3mm;
+  addbackground withcolor "lightgray";
+\stopMPcode
+\stopbuffer
+
+\getbuffer[warna]
+
+\page
+\setuppapersize[A4,portrait]
+\setuplayout[margin=.75in,location=middle,
+  topspace=0in,backspace=.85in,
+  height=fit,width=fit]
+\setuptyping[margin=standard,blank=halfline,option=lua,lines=normal]
+\setupbodyfont[schola,11pt]
+\midaligned{Kod grafik berwarna (elips pada bahagian dalam anak bulan):}
+\blank[-1*small]
+\midaligned{\color[red]{*}\tfx \color[blue]{Imej di atas yang terhasil daripada kod di bawah ini telah dikecilkan skalanya kepada 0.5cm per unit.}}
+\tfx \typebuffer[warna]
+
+\stoptext

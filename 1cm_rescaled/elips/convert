@@ -1,0 +1,21 @@
+#!/usr/bin/env zsh
+
+# https://github.com/dawbarton/pdf2svg/
+# https://manpages.ubuntu.com/manpages/xenial/man1/pdf2svg.1.html
+# COMMAND: pdf2svg <input.pdf> <output.svg/output%d.svg> <page number/all>
+#pdf2svg artefacts/4_bendera_elips.pdf extfig/4_bendera_elips.svg 1
+
+CONVERSION_DIR="conversion"
+mkdir -p $CONVERSION_DIR
+cd $CONVERSION_DIR
+
+for PDF in ../*.pdf; do
+  pdf2svg "$PDF" "$(basename "$PDF" .pdf)%d.svg" all;
+done
+
+#pdftk ../output.pdf burst
+#for PDF in ./*.pdf; do
+#  pdf2svg "$PDF" "$(basename "$PDF" .pdf).svg";
+#done
+
+cd ..

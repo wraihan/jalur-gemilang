@@ -1,0 +1,8 @@
+\setupheadertexts[{\from[lesen]}\hfill Data Bintang Pecah 14]
+\setupbackgrounds[header][text][bottomframe=off]
+
+\defineoverlay[WatermarkOverlay]
+  [{\framed[frame=off,foregroundcolor=lightgray]
+  {\scale[sx=3.5,sy=3.5]
+  {\rotate[rotation=10]{wraihan.com}}}}]
+\setupbackgrounds[page][background=WatermarkOverlay]

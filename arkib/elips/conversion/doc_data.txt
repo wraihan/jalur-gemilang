@@ -1,0 +1,88 @@
+InfoBegin
+InfoKey: TeX.Support
+InfoValue: tug.org
+InfoBegin
+InfoKey: ConTeXt.Url
+InfoValue: github.com/contextgarden/context
+InfoBegin
+InfoKey: ConTeXt.Support
+InfoValue: contextgarden.net
+InfoBegin
+InfoKey: Creator
+InfoValue: LuaMetaTeX 2.10 20230327 + ConTeXt LMTX 2023.04.01 09:52
+InfoBegin
+InfoKey: ModDate
+InfoValue: D:20230411131226+08&apos;00&apos;
+InfoBegin
+InfoKey: CreationDate
+InfoValue: D:20230411131226+08&apos;00&apos;
+InfoBegin
+InfoKey: Producer
+InfoValue: LuaMetaTeX-2.10
+InfoBegin
+InfoKey: ID
+InfoValue: main | 2023-04-11T13:12:26+08:00
+InfoBegin
+InfoKey: ConTeXt.Jobname
+InfoValue: main
+InfoBegin
+InfoKey: ConTeXt.Time
+InfoValue: 2023-04-11T13:12:26+08:00
+InfoBegin
+InfoKey: Title
+InfoValue: main
+InfoBegin
+InfoKey: ConTeXt.Version
+InfoValue: 2023.04.01 09:52
+PdfID0: f64722ca4b80674cb1a87ecb5eb17224
+PdfID1: f64722ca4b80674cb1a87ecb5eb17224
+NumberOfPages: 9
+PageMediaBegin
+PageMediaNumber: 1
+PageMediaRotation: 0
+PageMediaRect: 0 0 841.89 595.276
+PageMediaDimensions: 841.89 595.276
+PageMediaBegin
+PageMediaNumber: 2
+PageMediaRotation: 0
+PageMediaRect: 0 0 841.89 595.276
+PageMediaDimensions: 841.89 595.276
+PageMediaBegin
+PageMediaNumber: 3
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 4
+PageMediaRotation: 0
+PageMediaRect: 0 0 841.89 595.276
+PageMediaDimensions: 841.89 595.276
+PageMediaBegin
+PageMediaNumber: 5
+PageMediaRotation: 0
+PageMediaRect: 0 0 841.89 595.276
+PageMediaDimensions: 841.89 595.276
+PageMediaBegin
+PageMediaNumber: 6
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 7
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 8
+PageMediaRotation: 0
+PageMediaRect: 0 0 595.276 841.89
+PageMediaDimensions: 595.276 841.89
+PageMediaBegin
+PageMediaNumber: 9
+PageMediaRotation: 0
+PageMediaRect: 0 0 841.89 595.276
+PageMediaDimensions: 841.89 595.276
+PageLabelBegin
+PageLabelNewIndex: 1
+PageLabelStart: 1
+PageLabelNumStyle: DecimalArabicNumerals

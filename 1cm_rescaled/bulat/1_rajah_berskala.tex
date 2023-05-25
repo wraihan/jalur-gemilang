@@ -1,0 +1,16 @@
+\setuppapersize[A4,landscape]
+\setuplayout[topspace=-.75in,backspace=.25in,
+  margin=.75in,location=middle,
+  height=fit,width=fit]
+\setuppagenumbering[location={},style=bold]
+
+\starttext
+
+\startuseMPgraphic{rajahskala}
+  draw externalfigure "artefacts/3_rajah_kasar.pdf"
+    shifted (.003cm,-1.615cm);
+  draw externalfigure "artefacts/5_skala_unjuran.pdf";
+\stopuseMPgraphic
+\useMPgraphic{rajahskala}
+
+\stoptext

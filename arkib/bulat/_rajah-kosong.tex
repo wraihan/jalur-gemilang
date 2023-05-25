@@ -1,0 +1,60 @@
+\setuppapersize[A4,landscape]
+\setuplayout[margin=.75in,location=middle,
+  height=fit,width=fit]
+\setuppagenumbering[location={},style=bold]
+
+\starttext
+
+\startbuffer[rajah]
+\starttext
+
+\startMPcode
+picture LakaranB; LakaranB := image (
+  picture Jalur; Jalur := image (
+    draw fullsquare xysized (14,1) shifted (14,-0);
+    picture cp; cp := currentpicture;
+    def copy = addto currentpicture also cp enddef;
+    copy yscaled 8 shifted (-14,-3.5); copy shifted (0,-1);
+    copy shifted (0,-2); copy shifted (0,-3); copy shifted (0,-4);
+    copy shifted (0,-5); copy shifted (0,-6); copy shifted (0,-7);
+    copy xscaled 2 shifted (-21,- 8); copy xscaled 2 shifted (-21,- 9);
+    copy xscaled 2 shifted (-21,-10); copy xscaled 2 shifted (-21,-11);
+    copy xscaled 2 shifted (-21,-12); copy xscaled 2 shifted (-21,-13);
+  ) xyscaled 1cm; draw Jalur withpen pencircle scaled .25pt;
+
+  path Bulan; Bulan := fullcircle scaled 2;
+  draw Bulan xyscaled 3.00cm shifted (-1.25cm,-3.5cm);
+  draw Bulan xyscaled 2.67cm shifted (- .58cm,-3.5cm); % r = 2.67 unit
+  fill Bulan xyscaled 2.67cm shifted ( 1.45cm,-3.5cm) withcolor white;
+
+  picture Bintang; Bintang := image (
+    a = 1.00cm; b = 2.50cm; z01 = -z15 = (a, 0); -z08 = z22 = (0, -b);
+    c = 2.44cm; d =  .56cm; z02 = -z16 = (c, d); -z14 = z28 = (c, -d);
+    e =  .90cm; f =  .43cm; z03 = -z17 = (e, f); -z13 = z27 = (e, -f);
+    g = 1.96cm; h = 1.56cm; z04 = -z18 = (g, h); -z12 = z26 = (g, -h);
+    i =  .62cm; j =  .78cm; z05 = -z19 = (i, j); -z11 = z25 = (i, -j);
+    k = 1.09cm; l = 2.25cm; z06 = -z20 = (k, l); -z10 = z24 = (k, -l);
+    m =  .22cm; n =  .98cm; z07 = -z21 = (m, n); -z09 = z23 = (m, -n);
+
+    draw z01--z02--z03--z04--z05--z06--z07--z08--z09--z10--z11--z12--z13
+      --z14--z15--z16--z17--z18--z19--z20--z21--z22--z23--z24--z25--z26
+      --z27--z28--cycle withpen pencircle scaled .5pt;
+  ) shifted (1.75cm,-3.5cm); draw Bintang;
+) scaled .75; draw LakaranB;
+\stopMPcode
+
+\stoptext
+\stopbuffer
+
+\getbuffer[rajah]
+
+\page
+\setuppapersize[A4,portrait]
+\setuplayout[topspace=0in,backspace=.85in,
+  location=middle,
+  height=fit,width=fit]
+\setuptyping[margin=standard,blank=halfline]
+\hskip.5cm Kod lakaran (bulatan pada bahagian dalam anak bulan):
+\tfx \typebuffer[rajah]
+
+\stoptext

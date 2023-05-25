@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+
+CONVERSION_DIR="conversion"
+mkdir -p $CONVERSION_DIR
+
+cd $CONVERSION_DIR
+pdftk ../output.pdf burst
+
+for PDF in ./*.pdf; do
+    pdf2svg "$PDF" "$(basename "$PDF" .pdf).svg";
+done
+
+for SVG in ./*.svg; do
+    convert "$SVG" "$(basename "$SVG" .svg).png";
+done
+
+cd ..

@@ -1,0 +1,52 @@
+% https://wiki.contextgarden.net/Using_Graphics
+% Mod landskap bermula
+\clip[width=25cm,height=15cm,hoffset=2.65cm,voffset=2.125cm]
+  {\typesetfile[_rajah-berskala.tex][page=1]}
+\clip[width=25cm,height=15cm,hoffset=1.61cm,voffset=1.005cm]
+  {\typesetfile[_rajah-kosong.tex][page=1,scale=1004]}
+% Mod landskap berakhir
+
+% Mod potret bermula
+\page
+\setuppapersize[A4,portrait]
+\clip[width=18cm,height=26cm,hoffset=2.65cm,voffset=2cm]
+  {\typesetfile[_rajah-kosong.tex][page=2]}
+% Mod potret berakhir
+
+% Mod landskap bermula
+\page
+\setuppapersize[A4,landscape]
+\clip[width=25cm,height=15cm,hoffset=2.65cm,voffset=2.125cm]
+  {\typesetfile[_warna-berskala.tex][page=1]}
+\clip[width=25cm,height=15cm,hoffset=1.61cm,voffset=1.005cm]
+  {\typesetfile[_bendera-elips.tex][page=1,scale=1004]}
+% Mod landskap berakhir
+
+% Mod potret bermula
+\page
+\setuppapersize[A4,portrait]
+\clip[width=18cm,height=26cm,hoffset=2.65cm,voffset=2cm]
+  {\typesetfile[_bendera-elips.tex][page=2]}
+
+% Lakaran 
+\startcombination
+{\clip[width=20cm,height=11cm,hoffset= 2 cm,voffset= .65cm]
+  {\externalfigure[artefacts/_rajah-berskala.pdf][scale=666.7]}}
+{\clip[width=20cm,height=11cm,hoffset=1.3cm,voffset=-.65cm]
+  {\externalfigure[artefacts/_rajah-kosong.pdf][page=1,scale=669.4]}}
+\stopcombination
+% Berwarna 
+\startcombination
+{\clip[width=20cm,height=11cm,hoffset= 2 cm,voffset= .65cm]
+  {\externalfigure[artefacts/_warna-berskala.pdf][scale=666.7]}}
+{\clip[width=20cm,height=11cm,hoffset=1.3cm,voffset=-.65cm]
+  {\externalfigure[artefacts/_bendera-elips.pdf][page=1,scale=669.4]}}
+\stopcombination
+% Mod potret berakhir
+
+% Mod landskap bermula (skala)
+\page
+\setuppapersize[A4,landscape]
+\clip[width=25cm,height=15cm,hoffset=-.8cm,voffset=2.5cm]
+  {\midaligned{\typesetfile[_skala-unjuran.tex][page=1]}}
+% Mod landskap berakhir

@@ -1,0 +1,81 @@
+\setuppapersize[A4,landscape]
+\setuplayout[margin=.75in,location=middle,
+  height=fit,width=fit]
+\setuppagenumbering[location={},style=bold]
+
+\starttext
+
+\startMPcode
+picture Skala; Skala := image (
+  draw image ( pair left, right; right = -left = (1,0);
+    drawarrow origin--left *1.375cm; label.top ("2.75", right);
+    drawarrow origin--right*1.375cm;
+
+    drawarrow (1.75cm,0)--left * .500cm shifted (1.875cm,0);
+    label.top ("1"   , right*1.875cm);
+    drawarrow (1.75cm,0)--right* .500cm shifted (1.875cm,0);
+
+    drawarrow (3.00cm,0)--left *1.000cm shifted (3.375cm,0);
+    label.top ("2"   , right*3.375cm);
+    drawarrow (3.00cm,0)--right*1.000cm shifted (3.375cm,0);
+
+    drawarrow (5.00cm,0)--left *1.500cm shifted (5.875cm,0);
+    label.top ("3"   , right*5.875cm);
+    drawarrow (5.00cm,0)--right*1.500cm shifted (5.875cm,0);
+
+    drawarrow (8.00cm,0)--left *1.250cm shifted (8.625cm,0);
+    label.top ("2.5" , right*8.625cm);
+    drawarrow (8.00cm,0)--right*1.250cm shifted (8.625cm,0);
+
+    drawarrow (11.0cm,0)--left *1.375cm shifted (11.25cm,0);
+    label.top ("2.75", right*11.25cm);
+    drawarrow (11.0cm,0)--right*1.375cm shifted (11.25cm,0);
+  ) shifted (.875cm,0) withcolor .625blue;
+
+  pickup pencircle scaled .5pt; % https://tex.stackexchange.com/a/34474
+  draw image ( $ := 1; for i = 0 upto 27:
+    draw fullsquare shifted (i,0) scaled 1cm withcolor .35white;
+    label.bot(decimal $,(i,1)) shifted (27.4i,.2cm); $ := incr($); endfor;
+  ) shifted (0,-.75cm);
+  draw image ( $ := 1; for i = 0 downto -13:
+    draw fullsquare shifted (0,i) scaled 1cm withcolor transparent(1,0,white);
+    label.lft(decimal $,(.1i,1)) shifted (.4cm,28.4i); $ := incr($); endfor;
+  ) shifted (27cm,-2.25cm);
+) scaled .75; draw Skala;
+
+picture GarisPutus; GarisPutus := image (
+  drawoptions(dashed evenly);
+  path pO; pO := fullcircle scaled 6cm shifted (5.25cm,-5.75cm);
+  draw pO withpen pencircle scaled .3pt withcolor .5green;
+  drawpoints pO withpen pencircle scaled 3.5bp withcolor .5green;
+
+  path pI; pI := fullcircle xyscaled (5.502cm,5.202cm)
+    shifted (6.001cm,-5.75cm);
+  draw pI withpen pencircle scaled .3pt withcolor .5blue;
+  drawpoints pI withpen pencircle scaled 3.5bp withcolor .5blue;
+
+  pair W; W = (5.25cm,-3.24cm);
+  drawdot W withpen pencircle scaled 8.5bp
+    withcolor transparent(1,.85,.85red);
+  label.lft("W",W) shifted (0,.18cm) withcolor .85red;
+
+  path BP; BP := fullcircle scaled 2cm;
+  draw BP shifted (8.25cm,-5.75cm);
+  draw BP scaled 2.5 shifted (8.25cm,-5.75cm);
+
+  picture Unit; Unit := image (
+    i=1cm; s=2.25cm; u=13.7cm  ; q=0; r=-8.75cm;
+    draw (s,-2.75i)--(u,-2.75i); draw ( 2.25i,q)--( 2.25i,r);
+    draw (s,-3.25i)--(u,-3.25i); draw ( 3.25i,q)--( 3.25i,r);
+    draw (s,-4.75i)--(u,-4.75i);
+    draw (s,-5.75i)--(u,-5.75i); draw ( 5.25i,q)--( 5.25i,r);
+    draw (s,-6.75i)--(u,-6.75i); draw ( 8.25i,q)--( 8.25i,r);
+    draw (s,-8.25i)--(u,-8.25i); draw (10.75i,q)--(10.75i,r);
+    draw (s,-8.75i)--(u,-8.75i); draw (13.50i,q)--(13.50i,r);
+    draw (-.5i, .2r)--(27.5i, .2r); draw (- .5i,q)--(- .5i,1.8r);
+    draw (-.5i,1.8r)--(27.5i,1.8r); draw (27.5i,q)--(27.5i,1.8r); 
+  ); draw Unit withpen pencircle scaled .3pt;
+) scaled .75; draw GarisPutus;
+\stopMPcode
+
+\stoptext

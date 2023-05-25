@@ -1,0 +1,28 @@
+\setuppapersize[A4,landscape]
+\setuplayout[topspace=.75in,backspace=1in,
+  margin=.75in,location=middle,
+  height=fit,width=fit]
+\setuppagenumbering[location={},style=bold]
+
+\starttext
+
+% https://wiki.contextgarden.net/Transparency
+\setupcolors[pagecolormodel=auto]
+\definetransparency[lutsinar][a=0,t=.4]
+\hskip1.75cm
+\starttransparent[lutsinar]
+  \externalfigure[extfig/4_bendera_elips.svg][page=1,scale=1333.5]
+\stoptransparent
+
+\page
+\setuplayout[topspace=-.25in]
+\startuseMPgraphic{warnaskala}
+  draw externalfigure "artefacts/3_rajah_kasar.pdf"
+    shifted (1.2cm,-.44cm);
+  draw externalfigure "artefacts/2_warna_berskala.pdf";
+  draw externalfigure "artefacts/5_skala_unjuran.pdf"
+    shifted (1.197cm,1.175cm);
+\stopuseMPgraphic
+\hskip-3cm \useMPgraphic{warnaskala}
+
+\stoptext

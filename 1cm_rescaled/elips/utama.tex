@@ -1,0 +1,41 @@
+% https://wiki.contextgarden.net/Using_Graphics
+% Mod landskap bermula
+\page
+\setuppapersize[A4,landscape]
+\clip[width=25cm,height=15cm,hoffset=2.25cm,voffset=1.9cm]
+  {\typesetfile[1_rajah_berskala.tex][page=1]}
+\clip[width=25cm,height=15cm,hoffset=2.351cm,voffset=3.17cm]
+  {\typesetfile[2_warna_berskala.tex][page=2]}
+% Mod landskap berakhir
+
+% Mod potret bermula
+\page
+\setuppapersize[potret]
+\startcombination
+{\clip[width=20cm,height=9cm,hoffset=1cm,voffset=1.25cm]
+  {\typesetfile[3_rajah_kasar.tex][page=1,scale=666.7]}}
+{\clip[width=20cm,height=16cm,hoffset=2.25cm,voffset=2cm]
+  {\typesetfile[3_rajah_kasar.tex][page=2]}}
+\stopcombination
+
+\page
+\startcombination
+{\clip[width=20cm,height=8cm,hoffset=1.25cm,voffset=1.7cm]
+  {\typesetfile[4_bendera_elips.tex][page=1,scale=666.7]}}
+{\clip[width=20cm,height=17cm,hoffset=2.25cm,voffset=1.7cm]
+  {\typesetfile[4_bendera_elips.tex][page=2]}}
+\stopcombination
+% Mod potret berakhir
+
+% Mod landskap bermula (skala)
+\page
+\setuppapersize[A4,landscape]
+\clip[width=25cm,height=15cm,hoffset=-.797cm,voffset=2.385cm]
+  {\midaligned{\typesetfile[5_skala_unjuran.tex][page=1]}}
+%\clip[width=25cm,height=15cm,hoffset=1.613cm,voffset=.777cm]
+%  {\typesetfile[3_rajah_kasar.tex][page=1]}
+%\clip[width=25cm,height=15cm,hoffset=1.913cm,voffset=1.075cm]
+%  {\typesetfile[4_bendera_elips.tex][page=1]}
+%\clip[width=25cm,height=15cm,hoffset=2.415cm,voffset=2.815cm]
+%  {\externalfigure[extfig/gimp/scaled.pdf][page=1,scale=275]}
+% Mod landskap berakhir
