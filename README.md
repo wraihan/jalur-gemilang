@@ -6,8 +6,8 @@ I wrote a post in Bahasa Melayu entitled '[Melukis Jalur Gemilang dengan ConTeXt
 
 Files' processing is automated with the help of scripts provided by Dave Jarvis on his [blog](https://dave.autonoma.ca/blog/) titled '**Typesetting Markdown**'.
 1. Place `build-template` into /bin directory; &
-2. Run `ci` script (which I modified to suit my need) inside each project directory by typing this command:
-```./ci -V```
+2. Run `ci` script (which I modified to suit my needs) inside each project directory with this command:
+`./ci -V`.
 
 ---
 
