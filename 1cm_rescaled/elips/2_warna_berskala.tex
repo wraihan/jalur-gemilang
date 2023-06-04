@@ -9,7 +9,7 @@
 % https://wiki.contextgarden.net/Transparency
 \setupcolors[pagecolormodel=auto]
 \definetransparency[lutsinar][a=0,t=.4]
-\hskip1.75cm
+\hskip1.4cm
 \starttransparent[lutsinar]
   \externalfigure[extfig/4_bendera_elips.svg][page=1,scale=1333.5]
 \stoptransparent
@@ -18,11 +18,11 @@
 \setuplayout[topspace=-.25in]
 \startuseMPgraphic{warnaskala}
   draw externalfigure "artefacts/3_rajah_kasar.pdf"
-    shifted (1.197cm,-.4365cm);
-  draw externalfigure "artefacts/2_warna_berskala.pdf";
-  draw externalfigure "artefacts/5_skala_unjuran.pdf"
-    shifted (1.1935cm,1.1785cm);
+    shifted (.003cm,-1.615cm);
+  draw externalfigure "artefacts/2_warna_berskala.pdf"
+    shifted (-.842cm,-1.179cm);
+  draw externalfigure "artefacts/5_skala_unjuran.pdf";
 \stopuseMPgraphic
-\hskip-3cm \useMPgraphic{warnaskala}
+\hskip-2.6cm \useMPgraphic{warnaskala}
 
 \stoptext
