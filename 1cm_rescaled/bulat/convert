@@ -3,7 +3,7 @@
 # https://github.com/dawbarton/pdf2svg/
 # https://manpages.ubuntu.com/manpages/xenial/man1/pdf2svg.1.html
 # COMMAND: pdf2svg <input.pdf> <output.svg/output%d.svg> <page number/all>
-#pdf2svg artefacts/4_bendera_bulat.pdf extfig/4_bendera_bulat.svg 1
+#pdf2svg artefacts/4_warna_bulat.pdf extfig/4_warna_bulat.svg 1
 
 CONVERSION_DIR="conversion"
 mkdir -p $CONVERSION_DIR
