@@ -1,6 +1,4 @@
 \setuppapersize[A4,landscape]
-\setuplayout[margin=.75in,location=middle,
-  height=fit,width=fit]
 \setuppagenumbering[location={},style=bold]
 
 \starttext
@@ -33,15 +31,12 @@
 \getbuffer[rajah]
 
 \page
-\setuppapersize[A4,portrait]
-\setuplayout[margin=.75in,location=middle,
-  topspace=0in,backspace=.85in,
-  height=fit,width=fit]
-\setuptyping[margin=standard,blank=halfline,option=lua,lines=normal]
+\setuppapersize[A4]
+\setuptyping[margin=no,blank=halfline,option=lua,lines=normal]
 \setupbodyfont[schola,11pt]
-\midaligned{Kod lakaran (elips pada bahagian dalam anak bulan):}
+\hskip.2cm Kod lakaran (elips pada bahagian dalam anak bulan):
 \blank[-1*small]
-\midaligned{\color[red]{*}\tfx \color[blue]{Imej di atas yang terhasil daripada kod di bawah ini telah dikecilkan skalanya kepada 0.5cm per unit.}}
+\color[red]{*}\tfx \color[blue]{Imej di atas yang terhasil daripada kod di bawah ini telah dikecilkan skalanya kepada 0.5cm per unit.}
 \tfx \typebuffer[rajah]
 
 \stoptext

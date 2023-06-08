@@ -1,7 +1,4 @@
 \setuppapersize[A4,landscape]
-\setuplayout[topspace=.75in,backspace=1in,
-  margin=.75in,location=middle,
-  height=fit,width=fit]
 \setuppagenumbering[location={},style=bold]
 
 \starttext
@@ -9,20 +6,19 @@
 % https://wiki.contextgarden.net/Transparency
 \setupcolors[pagecolormodel=auto]
 \definetransparency[lutsinar][a=0,t=.4]
-\hskip1.4cm
 \starttransparent[lutsinar]
   \externalfigure[extfig/4_warna_bulat.svg][page=1,scale=1333.5]
 \stoptransparent
 
 \page
-\setuplayout[topspace=-.25in]
+\setuplayout[topspace=0in]
 \startuseMPgraphic{warnaskala}
   draw externalfigure "artefacts/3_rajah_kasar.pdf"
     shifted (.003cm,-1.615cm);
   draw externalfigure "artefacts/2_warna_skala.pdf"
-    shifted (-.842cm,-1.179cm);
+    shifted (-.2955cm,-1.3165cm);
   draw externalfigure "artefacts/5_skala_bulat.pdf";
 \stopuseMPgraphic
-\hskip-2.6cm \useMPgraphic{warnaskala}
+\hskip-3.1cm \useMPgraphic{warnaskala}
 
 \stoptext
