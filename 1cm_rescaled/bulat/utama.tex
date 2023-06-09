@@ -1,7 +1,6 @@
 % https://wiki.contextgarden.net/Using_Graphics
 % Mod landskap bermula
-\page
-\setuppapersize[landskap]
+\page \setuppapersize[landskap]
 \clip[width=26cm,height=13.5cm,hoffset=3.58cm,voffset=3.2cm]
   {\typesetfile[1_rajah_skala.tex][page=1]}
   \midaligned{\labeltexts{imej1}{ \tf Rajah kasar dengan skala.}}
@@ -12,15 +11,13 @@
 % Mod landskap berakhir
 
 % Mod potret bermula
-\page
-\setuppapersize[potret]
+\page \setuppapersize[potret]
 \startcombination
 {\clip[width=20cm,height=9cm,hoffset=1.4cm,voffset=1.2cm]
   {\typesetfile[3_rajah_kasar.tex][page=1,scale=666.7]}}
 {\clip[width=20cm,height=16cm,hoffset=2.3cm,voffset=4cm]
   {\typesetfile[3_rajah_kasar.tex][page=2]}}
 \stopcombination
-
 \page
 \startcombination
 {\clip[width=20cm,height=8cm,hoffset=1.6cm,voffset=1.5cm]
@@ -31,8 +28,7 @@
 % Mod potret berakhir
 
 % Mod landskap bermula (skala)
-\page
-\setuppapersize[landskap]
+\page \setuppapersize[landskap]
 \clip[width=26cm,height=13.5cm,hoffset=2.704cm,voffset=2.3cm]
   {\typesetfile[5_skala_bulat.tex][page=1]}
 % Mod landskap berakhir
