@@ -13,9 +13,4 @@ for PDF in ../*.pdf; do
   pdf2svg "$PDF" "$(basename "$PDF" .pdf)%d.svg" all;
 done
 
-#pdftk ../output.pdf burst
-#for PDF in ./*.pdf; do
-#  pdf2svg "$PDF" "$(basename "$PDF" .pdf).svg";
-#done
-
 cd ..
