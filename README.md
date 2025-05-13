@@ -1,6 +1,6 @@
 # Jalur-Gemilang
 
-Jalur Gemilang (Flag of Malaysia) drawn in ConTeXt LMTX (LUAMETATEX engine).
+Jalur Gemilang (Flag of Malaysia) drawn in ConTeXt (LUAMETATEX engine).
 
 Files' processing is automated with the help of scripts provided by Dave Jarvis in his [blog posts](https://dave.autonoma.ca/blog/) chiefly titled '**Typesetting Markdown**' (from Part 1 to 8).
 1. Place `build-template` into `~/bin` directory (make sure the PATH environment variable is set); &
@@ -11,4 +11,4 @@ Files' processing is automated with the help of scripts provided by Dave Jarvis 
 
 ---
 
-Blog post: '[Melukis Jalur Gemilang dengan ConTeXt LMTX](https://wraihan.com/posts/melukis-jalur-gemilang-dengan-context-lmtx/)' (written in Malay language).
+Blog post: '[Melukis Jalur Gemilang dengan ConTeXt](https://wraihan.com/posts/melukis-jalur-gemilang-dengan-context/)' (written in Malay language).
