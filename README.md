@@ -1,5 +1,7 @@
 # Jalur-Gemilang
 
+![Tangkap Layar](jalur-gemilang-scaled.png)
+
 Jalur Gemilang (Flag of Malaysia) drawn in ConTeXt (LUAMETATEX engine).
 
 Files' processing is automated with the help of scripts provided by Dave Jarvis in his [blog posts](https://dave.autonoma.ca/blog/) chiefly titled '**Typesetting Markdown**' (from Part 1 to 8).

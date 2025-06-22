@@ -4,7 +4,7 @@
 git add .
 
 # Commit changes.
-msg="kemas kini secara pukal"
+msg="kemas kini .."
 if [ $# -eq 1 ]
   then msg="$1"
 fi
