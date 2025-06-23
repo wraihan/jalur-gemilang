@@ -89,7 +89,7 @@ build_document() {
 
   $log "Convert ${FILE_MD} to ${FILE_PDF}"
   pandoc "${FILE_MD}" --pdf-engine=xelatex \
-    --include-in-header=styles/no-page-num.tex \
+    --include-in-header=styles/mdtopdf.tex \
     -o "${FILE_PDF}"
 
   $log "Generate ${FILE_MAIN_PREFIX}"
