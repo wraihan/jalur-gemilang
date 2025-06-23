@@ -8,7 +8,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-
+---
 **Syarat Tambahan Berhubung Lesen MIT — Khusus bagi Penggunaan Jalur Gemilang:**
 
 Kod ini menjana **Jalur Gemilang**, iaitu bendera kebangsaan Malaysia.
@@ -23,7 +23,7 @@ Penggunaan kod ini hendaklah dibuat dengan **bertanggungjawab dan penuh rasa hor
 
 *Penjelasan ini bertujuan memupuk kesedaran budaya dan tidak mengubah syarat-syarat Lesen MIT.*
 
-
+---
 **Additional Terms in Relation to the MIT License — Specific to the Use of the Jalur Gemilang:**
 
 This code generates the **Jalur Gemilang**, the national flag of Malaysia.
