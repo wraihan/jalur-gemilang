@@ -82,7 +82,15 @@ build_document() {
   mkdir -p "${DIR_BUILD}"
 
   local -r FILE_MAIN_PREFIX="main"
+
+  local -r FILE_MD="LICENSE.md"
+  local -r FILE_PDF="$(basename "${FILE_MD}" .md).pdf"
   local -r FILE_DST="$(basename "${ARG_FILE_OUTPUT}" .pdf).pdf"
+
+  $log "Convert ${FILE_MD} to ${FILE_PDF}"
+  pandoc "${FILE_MD}" --pdf-engine=xelatex \
+    --include-in-header=styles/mdtopdf.tex \
+    -o "${FILE_PDF}"
 
   $log "Generate ${FILE_MAIN_PREFIX}"
   context --nonstopmode --batchmode --purgeall \

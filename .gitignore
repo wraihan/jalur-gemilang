@@ -8,7 +8,7 @@
 1cm_rescaled/elips/extfig/**
 
 
-# Keep the directory structure
+# Kept
 !1cm_rescaled/bulat/extfig/.gitkeep
 
 !1cm_rescaled/elips/conversion/enlarged/convert_im
