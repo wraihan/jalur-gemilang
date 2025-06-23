@@ -1,2 +1,15 @@
-# Keep the directory structure by tracking .gitkeep
+# Ignored
+1cm_rescaled/bulat/artefacts
+1cm_rescaled/bulat/conversion
+1cm_rescaled/bulat/extfig/**
+
+1cm_rescaled/elips/artefacts
+1cm_rescaled/elips/conversion/**
+1cm_rescaled/elips/extfig/**
+
+
+# Keep the directory structure
 !1cm_rescaled/bulat/extfig/.gitkeep
+
+!1cm_rescaled/elips/conversion/enlarged/convert_im
+!1cm_rescaled/elips/extfig/gimp/scaled.xcf
