@@ -14,9 +14,9 @@ Penggunaan kod ini hendaklah dibuat dengan **bertanggungjawab dan penuh rasa hor
 
 ---
 
-## Additional Terms in Relation to the MIT License (Specific to the Use of the Jalur Gemilang):
+## Additional Terms in Relation to the MIT License (Specific to the Use of the "Jalur Gemilang"):
 
-This code generates the **Jalur Gemilang**, the national flag of Malaysia.
+This code generates the "**Jalur Gemilang**", the national flag of Malaysia.
 
 While the code is licensed under the permissive MIT License, users are respectfully advised that the flag design is a protected national symbol under Malaysian law, particularly the **Emblems and Names (Prevention of Improper Use) Act 1963**.
 

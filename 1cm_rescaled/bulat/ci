@@ -83,7 +83,7 @@ build_document() {
 
   local -r FILE_MAIN_PREFIX="main"
 
-  local -r FILE_MD="LICENSE.md"
+  local -r FILE_MD="pindaan_lesen.md"
   local -r FILE_PDF="$(basename "${FILE_MD}" .md).pdf"
   local -r FILE_DST="$(basename "${ARG_FILE_OUTPUT}" .pdf).pdf"
 

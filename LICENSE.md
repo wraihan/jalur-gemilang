@@ -37,3 +37,17 @@ Please use this code **responsibly and respectfully**, especially in contexts in
 3. Any modification, misrepresentation, or depiction that may be viewed as dishonoring the flag.
 
 *This advisory aims to encourage cultural respect and does not alter the terms of the MIT License.*
+
+---
+**Nota Tambahan Mengenai Penggunaan Perisian:**
+
+Kod ini dibangunkan menggunakan sistem pemprosesan dokumen **ConTeXt** yang dilesenkan di bawah **GNU General Public License (GPL)**. Namun begitu, kod ini ditulis secara bebas dan tidak mengandungi atau mengubah sebarang kod sumber daripada sistem ConTeXt.
+
+Oleh itu, kod ini dianggap sebagai hasil asli penggunaan, dan dilesenkan secara berasingan di bawah Lesen MIT.
+
+---
+**Additional Note Regarding Software Use:**
+
+This code was developed using the **ConTeXt** typesetting system, which is licensed under the **GNU General Public License (GPL)**. However, it was written independently and does not contain or modify any part of ConTeXt’s source code.
+
+Therefore, this code is considered an original work of use and is licensed separately under the MIT License.
