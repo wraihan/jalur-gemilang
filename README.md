@@ -1,6 +1,5 @@
 # Jalur-Gemilang
 
-![Tangkap Layar](jalur-gemilang-scaled.png)
 
 Jalur Gemilang (Flag of Malaysia) drawn in ConTeXt (LUAMETATEX engine).
 
