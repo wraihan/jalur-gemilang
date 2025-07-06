@@ -14,5 +14,5 @@ for PDF in ../*.pdf; do
 done
 
 cd ..
-pdftk output.pdf cat 1-5 output output_.pdf   # deleting the last page.
+pdftk output.pdf cat 1-6 output output_.pdf   # deleting the last page.
 mv output_.pdf output.pdf   # updating the finalized file.
