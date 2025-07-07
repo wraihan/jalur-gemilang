@@ -3,11 +3,11 @@
 
 \starttext
 
-% https://wiki.contextgarden.net/Transparency
+% https://wiki.contextgarden.net/Command/definetransparency
 \setupcolors[pagecolormodel=auto]
 \definetransparency[lutsinar][a=0,t=.4]
 \starttransparent[lutsinar]
-  \externalfigure[extfig/4_warna_bulat.svg][page=1,scale=1333.5]
+  \externalfigure[extfig/4_warna_bulat.svg][conversion=mp,page=1]
 \stoptransparent
 
 \page \setuplayout[topspace=0in]

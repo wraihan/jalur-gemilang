@@ -1,18 +1,20 @@
 #!/usr/bin/env zsh
 
+CONVERSION_DIR="conversion"
+mkdir -p $CONVERSION_DIR
+
 # https://github.com/dawbarton/pdf2svg/
 # https://manpages.ubuntu.com/manpages/xenial/man1/pdf2svg.1.html
 # COMMAND: pdf2svg <input.pdf> <output.svg/output%d.svg> <page number/all>
-pdf2svg artefacts/4_warna_elips.pdf extfig/4_warna_elips.svg 1
-
-CONVERSION_DIR="conversion"
-mkdir -p $CONVERSION_DIR
-cd $CONVERSION_DIR
-
-for PDF in ../*.pdf; do
-  pdf2svg "$PDF" "$(basename "$PDF" .pdf)%d.svg" all;
+for PDF in ./*.pdf; do
+  pdf2svg "$PDF" "$CONVERSION_DIR/$(basename "$PDF" .pdf)%d.svg" all;
 done
 
-cd ..
-pdftk output.pdf cat 1-5 output output_.pdf   # deleting the last page.
-mv output_.pdf output.pdf   # updating the finalized file.
+# Deleting the last page
+pdftk output.pdf cat 1-5 output jalur_gemilang.pdf 
+
+# Removing output.pdf & the redundant file on artefacts
+rm output.pdf
+
+# Silently remove the "jalur.gemilang.pdf" if it exists in artefacts dir
+[ -f "artefacts/jalur_gemilang.pdf" ] && rm artefacts/jalur_gemilang.pdf
