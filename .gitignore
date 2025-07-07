@@ -5,7 +5,7 @@
 
 1cm_rescaled/elips/artefacts
 1cm_rescaled/elips/conversion/**
-1cm_rescaled/elips/extfig
+1cm_rescaled/elips/extfig/**
 
 
 # Kept
@@ -13,3 +13,4 @@
 
 !1cm_rescaled/elips/conversion/enlarged/convert_im
 !1cm_rescaled/elips/conversion/enlarged/convert_gm
+!1cm_rescaled/elips/extfig/gimp/scaled.xcf
