@@ -45,7 +45,7 @@ ARGUMENTS+=(
 execute() {
   local -r await=close_write,delete
 
-  $log "Await file modifications in ${SCRIPT_DIR}"
+  $log "Awaiting file modifications in ${SCRIPT_DIR}"
   inotifywait -q -e "${await}" -m . styles | \
   while read -r directory event filename; do
     if [[ ! "${event}" == *ISDIR* ]] && filter "${filename}"; then
@@ -121,6 +121,9 @@ build_document() {
 
   $log "Running post-processing script (./convert)"
   ./convert
+
+  # Revert to awaiting files after completion
+  $log "Awaiting file modifications in ${SCRIPT_DIR}"
 }
 
 # -----------------------------------------------------------------------------
