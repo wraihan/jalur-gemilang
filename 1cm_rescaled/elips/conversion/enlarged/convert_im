@@ -9,12 +9,12 @@ for SVG in ../*.svg; do
 done
 
 # https://superuser.com/q/444585
-# https://imagemagick.org/script/command-line-options.php#alpha
-#magick -list <options> (untuk dapatkan senarai operator)
-magick output7.png -alpha Set -channel A -evaluate Set 40% compose1.png
+# https://imagemagick.org/script/command-line-options.php#list
+#magick -list <type> (untuk dapatkan senarai operator)
+magick output8.png -alpha Set -channel A -evaluate Set 40% compose1.png
 
 # https://imagemagick.org/script/composite.php 
 #magick composite output6.png output5.png -compose Multiply compose3.png
 
-magick composite compose1.png output6.png -compose Multiply compose2.png
-magick composite compose2.png output5.png -compose Multiply compose3.png
+magick composite compose1.png output7.png -compose Multiply compose2.png
+magick composite compose2.png output6.png -compose Multiply compose3.png
