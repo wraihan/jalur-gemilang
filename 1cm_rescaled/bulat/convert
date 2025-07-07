@@ -13,7 +13,7 @@ done
 # Deleting the last page
 pdftk output.pdf cat 1-5 output jalur_gemilang.pdf 
 
-# Removing output.pdf & the redundant file on artefacts
+# Removing output.pdf
 rm output.pdf
 
 # Silently remove the "jalur.gemilang.pdf" if it exists in artefacts dir
